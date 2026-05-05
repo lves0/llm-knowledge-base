@@ -48,22 +48,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 
 ```
 vault/
-├── raw/                    # 原始資料，只進不改（不管誰寫的，未經編譯加工）
+├── raw/                    # (Information) 原始資料，只進不改（不管誰寫的，未經編譯加工）
 │   ├── articles/           # 文章剪藏（origin: external）
 │   ├── books/              # 書籍筆記（origin: external）
 │   ├── podcasts/           # 播客轉錄（origin: external）
 │   ├── papers/             # 學術論文（origin: external）
+│   ├── Videos/             # 影片（origin: external）
 │   ├── notes/              # 隨手靈感筆記（origin: self）
 │   │   └── social/         # 社群平台匯入（facebook/ 等，origin: self）
 │   └── projects/           # 專案相關原始資料（origin: self）
 │
-├── wiki/                   # 編譯產物，由 LLM 維護，不手動改
+├── metagraph.md            # (data) 原始資料的結構化資料物品特徵linking
+├── wiki/                   # (knowkledge) 編譯產物，由 LLM 維護，不手動改
 │   ├── indexes/            # All-Sources.md, All-Concepts.md
 │   ├── concepts/           # 概念條目（交叉引用）
 │   ├── summaries/          # 逐篇摘要
 │   └── log.md              # 操作紀錄（compile、query、health-check）
 │
-├── brainstorming/          # 思考與探索
+├── r&d/                    # 記錄假設推理 > 驗證 > 量化 + 優化
+│   ├── hypothetical reasoning.md
+│   #
+│   ├── experiment.md       #
+│   ├── data collecet.md    #
+│
+├── Methodology/            # (wisdom) 分折工具/ 方法論/ concept/ SOP
+│   ├── experience.md       # 管跨來源的綜合結論
+│   ├── Synthesis.md        # 管跨來源的綜合結論
+|
+├── brainstorming/          # (query)思考與探索
 │   ├── chat/               # 問答沉澱（每次複雜提問的結果）
 │   └── health/             # /health-check 產出的知識庫品質報告
 │
@@ -71,6 +83,20 @@ vault/
 │   └── projects/           # 進行中的專案
 │   # 依領域自訂子資料夾，如：文章/、教學記錄/、書稿/、簡報/ 等
 │
+├── taskmanager/
+│   ├── status/             # 增量緩存 (SHA256/ checkpoint)
+│   │   └── Cache/
+│   │       ├── hot.md      # 最近上下文緩存 (高頻熱區，快速回到現場)
+│   │       └── overview.md # 當前認知快照 (Wiki 現在知道甚麼)
+│   ├── purpose.md          # 目的約束 (Wiki 到底為什麼存在)
+│   ├── review/ queue       # 人工判斷入口 (衝突/ 新實體/ 不確定)
+│
+├── 
+│
+├── 
+│
+├── 
+│ 
 └── attachments/            # 圖片、PDF 等附件
 ```
 
