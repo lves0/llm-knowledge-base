@@ -72,7 +72,6 @@ vault/
 │   ├── data collecet.md    #
 │
 ├── Methodology/            # (wisdom) 分折工具/ 方法論/ concept/ SOP
-│   ├── experience.md       # 管跨來源的綜合結論
 │   ├── Synthesis.md        # 管跨來源的綜合結論
 |
 ├── brainstorming/          # (query)思考與探索
