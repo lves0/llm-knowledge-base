@@ -68,11 +68,12 @@ vault/
 ├── r&d/                    # 記錄假設推理 > 驗證 > 量化 + 優化
 │   ├── hypothetical reasoning.md
 │   #
-│   ├── experiment.md       #
-│   ├── data collecet.md    #
+│   ├── experiment.md       # 驗證假設
+│   ├── data collecet.md    # 量化語意的關係
 │
 ├── Methodology/            # (wisdom) 分折工具/ 方法論/ concept/ SOP
 │   ├── Synthesis.md        # 管跨來源的綜合結論
+|   ├── Context SOP         # 分類法
 |
 ├── brainstorming/          # (query)思考與探索
 │   ├── chat/               # 問答沉澱（每次複雜提問的結果）
@@ -111,6 +112,10 @@ origin: external
 source: "[[YYYYMMDD 標題]]"
 compiled: YYYY-MM-DD
 tags: [標籤1, 標籤2]
+updated: YYYYMMDD HH:MM:SS
+status: verified
+confidence: 0-1
+inferredParagraphs:
 ---
 # 核心結論
 # 關鍵證據
@@ -126,6 +131,9 @@ origin: self
 source: "[[作品標題]]"
 compiled: YYYY-MM-DD
 tags: [標籤1, 標籤2]
+status: verified
+confidence: 0-1
+inferredParagraphs:
 ---
 # 我的主張
 # 實踐經驗（什麼有效、什麼沒用）
