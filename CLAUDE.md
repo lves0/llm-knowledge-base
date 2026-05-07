@@ -72,8 +72,11 @@ vault/
 │   ├── data collecet.md    # 量化語意的關係
 │
 ├── Methodology/            # (wisdom) 分折工具/ 方法論/ concept/ SOP
-│   ├── Synthesis.md        # 管跨來源的綜合結論
-|   ├── Context SOP         # 分類法
+│   ├── synthesis.md        # 管跨來源的綜合結論
+|   ├── context engineering
+|   # 分類法
+│   └── visualize structured context   
+│   # 結構化Context
 |
 ├── brainstorming/          # (query)思考與探索
 │   ├── chat/               # 問答沉澱（每次複雜提問的結果）
@@ -85,18 +88,11 @@ vault/
 │
 ├── taskmanager/
 │   ├── status/             # 增量緩存 (SHA256/ checkpoint)
-│   │   └── Cache/
+│   │   └── cache/
 │   │       ├── hot.md      # 最近上下文緩存 (高頻熱區，快速回到現場)
 │   │       └── overview.md # 當前認知快照 (Wiki 現在知道甚麼)
 │   ├── purpose.md          # 目的約束 (Wiki 到底為什麼存在)
 │   ├── review/ queue       # 人工判斷入口 (衝突/ 新實體/ 不確定)
-│
-├── 
-│
-├── 
-│
-├── 
-│ 
 └── attachments/            # 圖片、PDF 等附件
 ```
 
